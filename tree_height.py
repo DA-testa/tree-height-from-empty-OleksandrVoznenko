@@ -37,8 +37,8 @@ def main():
     elif n == 'F':
         file = input()
         with open ("./test/"+file, 'r') as f:
-            n = int(file.readline().strip())
-            parents = list(map(int, file.readline().strip().split()))
+            n = int(f.readline().strip())
+            parents = list(map(int, f.readline().strip().split()))
             rezult = compute_height(n, parents)
             print(rezult)
     # implement input form keyboard and from files
