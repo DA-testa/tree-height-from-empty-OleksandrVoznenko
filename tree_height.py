@@ -36,7 +36,7 @@ def main():
         print(rezult)
     elif n == 'F':
         file = input()
-        with open (file) as f:
+        with open ("./test/"+file, 'r') as f:
             n = int(file.readline().strip())
             parents = list(map(int, file.readline().strip().split()))
             rezult = compute_height(n, parents)
